@@ -5,7 +5,7 @@
 
 int main()
 {
-    int age = 30;
+    /*int age = 30;
     int* pointsToInt = &age;
     std::cout << "pointsToInt points to age now"<<std::endl;
     std::cout << "pointsToInt = 0x"<< std::hex << pointsToInt << std::endl;
@@ -13,7 +13,24 @@ int main()
     int dogsAge = 9;
     pointsToInt = &dogsAge;
     std::cout << "pointsToInt points to dogsAge now" << std::endl;
+    std::cout << "pointsToInt = 0x" << std::hex << pointsToInt << std::endl;*/
+
+    int age = 30;
+    int dogsAge = 9;
+    std::cout << "Integer age = " << age << std::endl;
+    std::cout << "Integer dogsAge = " << dogsAge << std::endl;
+
+    int* pointsToInt = &age;
+    std::cout << "pointsToInt points to age now" << std::endl;
     std::cout << "pointsToInt = 0x" << std::hex << pointsToInt << std::endl;
+    std::cout << "pointsToInt = " << std::dec << *pointsToInt << std::endl;
+
+    pointsToInt = &dogsAge;
+    std::cout << "pointsToInt points to dogsAge now" << std::endl;
+    std::cout << "pointsToInt = 0x" << std::hex << pointsToInt << std::endl;
+    std::cout << "pointsToInt = " << std::dec << *pointsToInt << std::endl;
+
+    return 0;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
