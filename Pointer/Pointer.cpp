@@ -15,7 +15,9 @@ int main()
     std::cout << "pointsToInt points to dogsAge now" << std::endl;
     std::cout << "pointsToInt = 0x" << std::hex << pointsToInt << std::endl;*/
 
-    int age = 30;
+    //
+
+    /*int age = 30;
     int dogsAge = 9;
     std::cout << "Integer age = " << age << std::endl;
     std::cout << "Integer dogsAge = " << dogsAge << std::endl;
@@ -28,7 +30,13 @@ int main()
     pointsToInt = &dogsAge;
     std::cout << "pointsToInt points to dogsAge now" << std::endl;
     std::cout << "pointsToInt = 0x" << std::hex << pointsToInt << std::endl;
-    std::cout << "pointsToInt = " << std::dec << *pointsToInt << std::endl;
+    std::cout << "pointsToInt = " << std::dec << *pointsToInt << std::endl;*/
+
+    int* pointsToInts = new int[2];
+    *pointsToInts = 1;
+    *(pointsToInts + 1) = 2;
+    std::cout << "address1 = " << pointsToInts << std::endl;
+    std::cout << "address2 = " << pointsToInts + 1 << std::endl;
 
     return 0;
 }
