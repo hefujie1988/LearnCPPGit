@@ -3,6 +3,14 @@
 
 #include <iostream>
 
+void CalcArea(const double* const ptrPi, const double* const ptrRadius, double* const ptrArea)
+{
+    if (ptrPi && ptrRadius && ptrArea)
+    {
+        *ptrArea = (*ptrPi) * (*ptrRadius) * (*ptrRadius);
+    }
+}
+
 int main()
 {
     /*int age = 30;
@@ -15,7 +23,7 @@ int main()
     std::cout << "pointsToInt points to dogsAge now" << std::endl;
     std::cout << "pointsToInt = 0x" << std::hex << pointsToInt << std::endl;*/
 
-    //
+    // Pointer address and value
 
     /*int age = 30;
     int dogsAge = 9;
@@ -32,12 +40,38 @@ int main()
     std::cout << "pointsToInt = 0x" << std::hex << pointsToInt << std::endl;
     std::cout << "pointsToInt = " << std::dec << *pointsToInt << std::endl;*/
 
-    int* pointsToInts = new int[2];
+    // Pointer increase
+
+    /*int* pointsToInts = new int[2];
     *pointsToInts = 1;
     *(pointsToInts + 1) = 2;
     std::cout << "address1 = " << pointsToInts << std::endl;
-    std::cout << "address2 = " << pointsToInts + 1 << std::endl;
+    std::cout << "address2 = " << pointsToInts + 1 << std::endl;*/
 
+    // Const Pointer to be function parameter
+
+    /*const double Pi = 3.1416;
+    double radius = 20;
+    double area = 0;
+    CalcArea(&Pi, &radius, &area);
+    std::cout << "Area is = " << area << std::endl;*/
+
+    // Array and pointer
+
+    const int ARRAY_LEN = 5;
+    int myNumbers[ARRAY_LEN] = { 24, -1, 365, -999, 2011 };
+    int* pointToNumbers = myNumbers;
+    std::cout << "Display array using pointer syntax， operator*" << std::endl;
+    for (int index = 0; index < ARRAY_LEN; ++index)
+    {
+        std::cout << "Element " << index << "=" << *(myNumbers + index) << std::endl;
+    }
+    std::cout << "Display array using ptr with array syntax， operator[]" << std::endl;
+    for (int index = 0; index < ARRAY_LEN; index++)
+    {
+        std::cout << "Element" << index << "=" << pointToNumbers[index] << std::endl;
+    }
+    
     return 0;
 }
 
