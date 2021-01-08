@@ -58,7 +58,7 @@ int main()
 
     // Array and pointer
 
-    const int ARRAY_LEN = 5;
+    /*const int ARRAY_LEN = 5;
     int myNumbers[ARRAY_LEN] = { 24, -1, 365, -999, 2011 };
     int* pointToNumbers = myNumbers;
     std::cout << "Display array using pointer syntax， operator*" << std::endl;
@@ -70,8 +70,30 @@ int main()
     for (int index = 0; index < ARRAY_LEN; index++)
     {
         std::cout << "Element" << index << "=" << pointToNumbers[index] << std::endl;
-    }
+    }*/
     
+    // Dynamic new memory Exception
+
+    /*try
+    {
+        int* pointsToManyNums = new int[0x1fffffffffffffff];
+        delete[] pointsToManyNums;
+        std::cout << "Memory allocation Successful" << std::endl;
+    }
+    catch (const std::exception&)
+    {
+        std::cout << "Memory allocation failed. Ending program" << std::endl;
+    }*/
+
+    // new(nothrow)
+    int* pointsToManyNums = new(std::nothrow) int[0x1fffffffffffffff];
+    if (pointsToManyNums)
+    {
+        delete[] pointsToManyNums;
+    }
+    else
+        std::cout << "Memory allocation failed. Ending program" << std::endl;
+
     return 0;
 }
 
