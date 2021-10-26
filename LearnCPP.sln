@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NewAndReleaseMemory", "NewA
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EmployeeDB", "EmployeeDB\EmployeeDB.vcxproj", "{4B61472C-C2D7-4E2E-B9D4-279A48A691DA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chapter8", "chapter8\chapter8.vcxproj", "{3BE6CD15-F1B3-4B99-BA0E-0165D4134367}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{4B61472C-C2D7-4E2E-B9D4-279A48A691DA}.Release|x64.Build.0 = Release|x64
 		{4B61472C-C2D7-4E2E-B9D4-279A48A691DA}.Release|x86.ActiveCfg = Release|Win32
 		{4B61472C-C2D7-4E2E-B9D4-279A48A691DA}.Release|x86.Build.0 = Release|Win32
+		{3BE6CD15-F1B3-4B99-BA0E-0165D4134367}.Debug|x64.ActiveCfg = Debug|x64
+		{3BE6CD15-F1B3-4B99-BA0E-0165D4134367}.Debug|x64.Build.0 = Debug|x64
+		{3BE6CD15-F1B3-4B99-BA0E-0165D4134367}.Debug|x86.ActiveCfg = Debug|Win32
+		{3BE6CD15-F1B3-4B99-BA0E-0165D4134367}.Debug|x86.Build.0 = Debug|Win32
+		{3BE6CD15-F1B3-4B99-BA0E-0165D4134367}.Release|x64.ActiveCfg = Release|x64
+		{3BE6CD15-F1B3-4B99-BA0E-0165D4134367}.Release|x64.Build.0 = Release|x64
+		{3BE6CD15-F1B3-4B99-BA0E-0165D4134367}.Release|x86.ActiveCfg = Release|Win32
+		{3BE6CD15-F1B3-4B99-BA0E-0165D4134367}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
